@@ -1,0 +1,49 @@
+#list {
+    transform: translateY(50px);
+}
+#title {
+    position: absolute;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: larger;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #000;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
+        1px -1px 0 #fff;
+
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+}
+.fadeIn {
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeOut {
+    animation-name: fadeOut;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.MusicSelectorScroll {
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.testMusicName {
+    white-space: nowrap;
+}
