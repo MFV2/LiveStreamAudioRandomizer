@@ -1,5 +1,8 @@
 # 配信用 音源ランダム再生＆楽曲名表記システム
 
+![Coding languages](https://img.shields.io/badge/javascript-blue?logo=javascript)
+[![GitHub](https://img.shields.io/github/license/MFV2/LiveStreamAudioRandomizer)](https://github.com/MFV2/LiveStreamAudioRandomizer/blob/main/LICENSE.md)
+
 ## What is this / このツールについて
 
 このツールは、[OBS Studio](https://obsproject.com/)で配信を行う際に雑談配信などで BGM をランダムに再生し、現在再生中の楽曲名を表示するために作成しました。
@@ -18,11 +21,18 @@
 また、`ending.html`などファイル名を変更して読み込むと、そのファイルに応じたプレイリストを別途再生できます。  
 変わった使い方だと、サーバー上にアップロードして URL パラメータ`scene`を指定することでも、プレイリストの変更が可能です。
 
+サンプルページは以下を確認して下さい。  
+※サンプルページを別タブで開くと、ブラウザのセキュリティ上の都合で音源が再生されない仕様になっています。
+
+-   [index.html](https://mfv2.github.io/LiveStreamAudioRandomizer/)
+-   [index.html?scene=ending](https://mfv2.github.io/LiveStreamAudioRandomizer/?scene=ending)
+-   [ending.html?scene=ending](https://mfv2.github.io/LiveStreamAudioRandomizer/ending.html)
+
 OBS への取り込み手順は以下の画像を参考にしてください。
 
-![how to 1](img/OBS1.png)  
-![how to 2](img/OBS2.png)  
-![how to 3](img/OBS3.png)
+![how to 1](img/obs1.png)  
+![how to 2](img/obs2.png)  
+![how to 3](img/obs3.png)
 
 ## System requirements / 動作環境
 
