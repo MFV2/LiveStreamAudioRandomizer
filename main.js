@@ -3,6 +3,7 @@
  * @description 配信用 音源ランダム再生＆楽曲名表記システム
  * @author マムルファイターV2 / MFV2
  * @version 1.00<br />
+ * 2024/09/28️ / v1.02 / README更新, テスト用機能追加<br />
  * 2024/09/28️ / v1.00 / 初版作成<br />
  * 2023/11/18 / v0.10 / 仮作成<br />
  *
@@ -117,6 +118,19 @@ const executeFirstSelect = () => {
         // OBS上のブラウザでは制限なく自動再生できるが、Chromeなど最新のブラウザでは
         // セキュリティ上の理由でユーザ操作なしに自動再生することは不可能のため注意。
         audio.autoplay = firstFlg;
+
+        // テスト用に、エンターキー押下で音源を再生する処理を定義する。
+        // OBS上では多分エンターキー押下イベントは発火できない。
+        if (firstFlg) {
+            let keyDownFunc = (event) => {
+                // エンターキー（キーコード13）を押したかどうか確認
+                if (event.key === `Enter`) {
+                    audio.play();
+                    document.removeEventListener(`keydown`, keyDownFunc);
+                }
+            };
+            document.addEventListener(`keydown`, keyDownFunc);
+        }
 
         // テストモードならプレイヤーを表示する。
         audio.controls = g_testFlg;

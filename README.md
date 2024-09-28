@@ -22,11 +22,12 @@
 変わった使い方だと、サーバー上にアップロードして URL パラメータ`scene`を指定することでも、プレイリストの変更が可能です。
 
 サンプルページは以下を確認して下さい。  
-※サンプルページを別タブで開くと、ブラウザのセキュリティ上の都合で音源が再生されない仕様になっています。
+※Chrome 等のブラウザのセキュリティ上の都合で、ページを開いただけでは音源が再生されない仕様になっています。ページを開いた後エンターキーを押下すると音源が再生されます。
 
 -   [index.html](https://mfv2.github.io/LiveStreamAudioRandomizer/)
--   [index.html?scene=ending](https://mfv2.github.io/LiveStreamAudioRandomizer/?scene=ending)
--   [ending.html?scene=ending](https://mfv2.github.io/LiveStreamAudioRandomizer/ending.html)
+-   [ending.html](https://mfv2.github.io/LiveStreamAudioRandomizer/ending.html) (ファイル名によるプレイリスト指定)
+-   [index.html?scene=ending](https://mfv2.github.io/LiveStreamAudioRandomizer/?scene=ending) (URL パラメータによるプレイリスト指定)
+-   [index.html?testFlg=On](https://mfv2.github.io/LiveStreamAudioRandomizer/?testFlg=On) (デバッグ用)
 
 OBS への取り込み手順は以下の画像を参考にしてください。
 
